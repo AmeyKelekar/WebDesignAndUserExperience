@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+		<meta name="Gestured" content="" />
+		<meta name="generator" content="WordPress 4.0" />
+		<meta name="viewport" content="width=device-width">
+		
+		<title>Auction it yourself</title>
+		
+		<link rel="shortcut icon" href="http://learn.jquery.com/jquery-wp-content/themes/learn.jquery.com/i/favicon.ico">
+		<link rel="stylesheet" href="http://jqueryui.com/jquery-wp-content/themes/jquery/css/base.css?v=1">
+		<link rel="stylesheet" href="http://jqueryui.com/jquery-wp-content/themes/jqueryui.com/style.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		
+		<style>
+			#submitButton{
+				background-color: #474719 !important;
+			}
+			select {
+				width: 437px;
+			}
+			input[type="password"]{
+				width: 70%;
+				min-width: 300px;
+				margin: 5px 0 10px 0;
+				padding: 8px 12px;
+				background: rgba(245,245,245,0.37);
+				border: 1px solid rgba(192,192,192,0.49);
+				border-radius: 2px;
+				-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+				box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+			}
+		</style>
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script src="http://learn.jquery.com/jquery-wp-content/themes/jquery/js/modernizr.custom.2.6.2.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+		<script>window.jQuery || document.write(unescape('%3Cscript src="//learn.jquery.com/jquery-wp-content/themes/jquery/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+		<script src="http://learn.jquery.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+		<script src="http://learn.jquery.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+		<script src="http://use.typekit.net/wde1aof.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>	
+	</head>
+	<body class="jquery-learn home page page-id-17 page-template page-template-home-php page-slug-index single-author singular">
+		<header>
+		</header>
+		<div id="container">
+			<nav id="main" class="constrain clearfix">
+				<div class="menu-top-container">
+					<ul id="menu-top" class="menu">
+						<font face="Castellar" size="+2" color="white">
+							<marquee><font color="red"> Register here </font> and be a part of <font color="red"> auction it yourself </font></marquee>
+						</font>	
+					</ul>
+				</div>
+			</nav>
+			<div id="logo-events" class="constrain clearfix">
+				<h2 class="logo"><a href="/" title="jQuery Learning Center">jQuery Learning Center</a></h2>
+				<aside><div id="broadcast"></div></aside>
+			</div>
+			<!--<div id="logo-events" class="constrain clearfix">
+				<h1 class="logo"><a href="/" title="auction it yourself">auction it yourself</a><h1>
+				<p>reverse auctioning re-engineered</p>
+				<aside><div id="broadcast"></div></aside>
+			</div>-->
+			<div id="content-wrapper" class="clearfix row">
+				<div class="content-right twelve columns">
+					<div id="content">
+						<p><strong><font size="+1" face='Comic Sans MS'>Enter registration details</font></strong></p>
+						<form action="register_validate.php" method="post">
+						<font face='Comic Sans MS' size='+1'>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label for="fname">Full Name:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="text" name="fname" id="fname" />
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label for="datepicker">Date of Birth:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="text" name="model" id="datepicker" />
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label>Gender:</label></p>
+								</div>
+								<div class = "nine columns">
+									<div id="radio">
+										<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+										<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+									</div>
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label for="phone">Phone No:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="text" name="phone" id="phone" />
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label for="email">Email:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="text" name="email" id="email" />
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label>Type:</label></p>
+								</div>
+								<div class = "nine columns">
+									<div id="type">
+										<input type="radio" id="buyer" name="type" value="1"><label for="buyer">Buyer</label>
+										<input type="radio" id="seller" name="type" value="2"><label for="seller">Seller</label>
+									</div>
+								</div>
+							</div>
+							<div class ="row">
+								<div class = "three columns">
+									<p><label for="address" style="vertical-align: top;">Address:</label></p>
+								</div>
+								<div class = "nine columns">
+									<textarea name="address" id="address" cols="30" rows="10"></textarea>
+								</div>
+							</div>
+							<div style="display:none" id="table">
+								<div class="row">
+									<div class = "three columns">
+										<p><label for="company">Company Name:</label></p>
+									</div>
+									<div class = "nine columns">
+										<input type="text" name="company" value="none" id="company" />
+									</div>
+								</div>
+								<div class="row">
+									<div class = "three columns">
+										<p><label for="deal">Dealers of:</label></p>
+									</div>
+									<div class = "nine columns">
+										<select name="deal" id="deal">
+											<option value="none"></option>
+											<option value="comp">COMPUTER/LAPTOP</option>
+											<option value="mobile">MOBILE</option>
+											<option value="art">ART</option>
+											<option value="car">CAR</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class = "three columns">
+									<p><label for="username">Username:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="text" name="username" id="username" />
+								</div>
+							</div>
+							<div class="row">
+								<div class = "three columns">
+									<p><label for="password">Password:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="password" name="password" id="password" />
+								</div>
+							</div>
+							<div class="row">
+								<div class = "three columns">
+									<p><label for="repassword">Confirm Password:</label></p>
+								</div>
+								<div class = "nine columns">
+									<input type="password" name="repassword" id="repassword" />
+								</div>
+							</div>
+							<br/><br/>
+							<p>When creating your password, follow these simple tips:</p>
+							<ul>
+								<li>Use a combination of at least 6 to 8 letters, numbers, and special characters (example - Heroes#28, @Betmanman22).</li>
+								<li>Use multiple words without spaces (example - Northstation). </li>
+								<li>Don't use single words that can be found in any dictionary (example - pharmacy). </li>
+								<li>Don't use personal information others can easily obtain or guess (example - your name, phone number, or birth date). </li>
+								<li>Don't use your email address </li>
+							</ul>
+							<p>
+								After creating your password, protect it. Don't share your password with others, and avoid using the same password for 	other online accounts.<br/>
+							</p>
+							<br/>
+							<div class="row">
+								<input name="acceptq1" type="checkbox"><label>I agree that:</label>
+								<ul style="margin: 0px 0px 20px; padding: 0px; display: block;">
+									<li>I accept the terms and condition of this site.</li>
+									<li>I may receive emails  from this site regarding changes in my account</li>
+								</ul>
+							</div>
+							<p><input type="submit" name="submit" value="Register" id="submitButton"/></p>
+						</font>
+						</form>
+					</div>
+					<div id="sidebar" class="widget-area" role="complementary">
+						<aside class="widget">
+							<h3 class="widget-title"><a href="login.html">Home</a></h3>
+							<p class="title">
+							<font size="+1" face='Comic Sans MS' color="#663300">
+								If you wish to leave<font color="red"> Click above button </font>to reach the Home page
+							</font>
+						</p>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="clearfix simple">
+			<div class="constrain">
+				<div id="legal">
+					<p class="copyright">Copyright 2014 Designed by Amey Kelekar</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$(function() {
+			$("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+			$("#radio").buttonset();
+			$("#type").buttonset();
+			$("#deal").selectmenu();
+		});
+	</script>
+	<script type="text/javascript" src="jquery.easyAccordian.js"></script>
+    <script type="text/javascript" src="utility.js"></script>
+
+    <script>
+		$("#buyer").click(function () {
+			$("#table").hide("slow");
+		});
+		
+		$("#seller").click(function () {
+			$("#table").show("slow");
+		});   
+    </script> 
+</html>                

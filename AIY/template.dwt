@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Auction it yourself</title>
+<!-- TemplateEndEditable -->
+<meta name="keywords" content="" />
+<meta name="Gestured" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="header">
+	<div id="menu">
+		<ul id="main">
+			<li class="current_page_item"><a href="../login1.php">Home</a></li>
+			<li><a href="../AboutUs.php">About Us</a></li>
+			<li><a href="../contact.php">Contact Us</a></li>
+            <li><a href="../help.php">HELP</a></li>
+            <li><a href="../whatorc.php">What is reverse auctioning?</a></li>
+            <li><a href="../steps.php">Steps in reverse auctioning process</a></li>
+		</ul>
+	</div>
+	<div id="logo">
+		<h1>auction it yourself</h1>
+		<p>reverse auctioning re-engineered</p>
+	</div>
+</div>
+<!-- end header -->
+	<!-- start page -->
+	<div id="page"><!-- TemplateBeginEditable name="Region1" -->
+	  <div id="sidebar1" class="sidebar">
+	    <ul>
+	      <li></li>
+	      <li></li>
+	      <li></li>
+	      <li></li>
+        </ul>
+    </div>
+	<!-- TemplateEndEditable -->
+	  <!-- start content -->
+	  <!-- TemplateBeginEditable name="Region2" -->
+	  <div id="content">
+	    <div class="post">
+	      <h1 class="title"><a href="#">Welcome to Our Website!</a></h1>
+	      <p class="byline">&nbsp;</p>
+	      <div class="entry">
+	        <p><strong>Auction it yourself is a an automated website that will help buyers get best deals with the click of a button.</strong>	        </p>
+	      </div>
+	      </div>
+	    <div class="post">
+	      <h2 class="title">&nbsp;</h2>
+	      <div class="entry"> </div>
+	      </div>
+	    </div>
+	  <!-- TemplateEndEditable -->
+	  <!-- end content -->
+		<!-- start sidebars -->
+		<!-- TemplateBeginEditable name="Region3" -->
+		<div id="sidebar2" class="sidebar">
+		  <ul>
+		    <li></li>
+		    </ul>
+		  <p>&nbsp;</p>
+		  <ul>
+		    <li></li>
+		    <li> </li>
+	      </ul>
+		  </div>
+		<!-- TemplateEndEditable -->
+		<!-- end sidebars -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright"></p>
+</div>
+</body>
+</html>
